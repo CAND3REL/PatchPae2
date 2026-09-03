@@ -98,7 +98,7 @@ Compiling on Windows with MinGW-w64:
     -municode -limagehlp -lversion -O2 -static
 
 Compiling on Windows with MSVC (Developer Command Prompt):
-  cl /O2 PatchPae2\main_standalone.c /Fe:PatchPae2.exe ^
+  cl /O2 /MT PatchPae2\main_standalone.c /Fe:PatchPae2.exe ^
     imagehlp.lib version.lib /link /SUBSYSTEM:CONSOLE
 
 The original main.c with Process Hacker 2 (phlib) dependency is still
